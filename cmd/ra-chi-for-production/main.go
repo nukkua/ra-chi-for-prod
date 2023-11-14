@@ -6,14 +6,14 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/nukkua/ra-chi/internal/app/router"
+	"github.com/nukkua/ra-chi/internal/mvc/router"
 )
 
 func main (){
 
 	r:= router.SetupRouter();
 	
-	port:= os.Getenv("PORT");
+	port:=  os.Getenv("PORT")
 	fmt.Println("Initializing server");
 	fmt.Println("Serving at port: "+port);
 
@@ -21,6 +21,5 @@ func main (){
 		port = "3000"
 	}
 
-
-	log.Fatal(http.ListenAndServe("localhost:" + port, r));
+	log.Fatal(http.ListenAndServe("0.0.0.0:" + port, r));
 }

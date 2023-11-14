@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/nukkua/ra-chi/internal/app/models"
+	"github.com/nukkua/ra-chi/internal/mvc/models"
 
 	"github.com/golang-jwt/jwt/v4"
 	"golang.org/x/crypto/bcrypt"

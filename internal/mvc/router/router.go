@@ -4,9 +4,9 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
-	"github.com/nukkua/ra-chi/internal/app/database"
-	"github.com/nukkua/ra-chi/internal/app/handlers"
-	"github.com/nukkua/ra-chi/internal/app/middlewares"
+	"github.com/nukkua/ra-chi/internal/mvc/database"
+	"github.com/nukkua/ra-chi/internal/mvc/handlers"
+	"github.com/nukkua/ra-chi/internal/mvc/middlewares"
 )
 
 func SetupRouter() *chi.Mux {
