@@ -1,6 +1,6 @@
 module github.com/nukkua/ra-chi
 
-go 1.21.4
+go 1.19
 
 require (
 	github.com/go-chi/chi/v5 v5.0.10 // direct
